@@ -24,7 +24,7 @@ function AddEmployee() {
         formData.append('empSalary' , empSalary)
         formData.append('image' , empFilePhoto);
 
-        fetch('https://fast-peak-17762.herokuapp.com/addmember' , {
+        fetch('https://aqueous-bastion-38134.herokuapp.com/addmember' , {
             method: 'POST',
             body: formData
         }).then(res => {

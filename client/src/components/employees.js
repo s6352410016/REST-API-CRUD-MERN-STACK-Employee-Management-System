@@ -8,7 +8,7 @@ function Employees() {
     const [empData , setEmpData] = useState([]);
 
     window.onload = () => {
-      fetch('https://fast-peak-17762.herokuapp.com/employees' , {
+      fetch('https://aqueous-bastion-38134.herokuapp.com/employees' , {
         method: 'GET'
       }).then(res => {
         return res.json();
@@ -33,7 +33,7 @@ function Employees() {
             'Your Data has been deleted.',
             'success'
           ).then(() => {
-            fetch(`https://fast-peak-17762.herokuapp.com/deletemember/${id}` , {
+            fetch(`https://aqueous-bastion-38134.herokuapp.com/deletemember/${id}` , {
             method: 'DELETE'
           }).then(res => {
             if(res.status === 200){
