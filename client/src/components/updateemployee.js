@@ -57,11 +57,11 @@ function UpdateEmployee() {
             </div>
             <div className="mb-3">
                 <label htmlFor="empTel" className="form-label">Employee Tel:</label>
-                <input type='text' autoComplete='off' id='empTel' className='form-control' onChange={(e) => setEmpTel(e.target.value)}></input>
+                <input type='number' autoComplete='off' id='empTel' className='form-control' onChange={(e) => setEmpTel(e.target.value)}></input>
             </div>
             <div className="mb-3">
                 <label htmlFor="empSalary" className="form-label">Employee Salary:</label>
-                <input type='text' autoComplete='off' id='empSalary' className='form-control' onChange={(e) => setEmpSalary(e.target.value)}></input>
+                <input type='number' autoComplete='off' id='empSalary' className='form-control' onChange={(e) => setEmpSalary(e.target.value)}></input>
             </div>
             <div className="mb-3">
                 <label htmlFor="empPhoto" className="form-label">Employee Photo:</label>
