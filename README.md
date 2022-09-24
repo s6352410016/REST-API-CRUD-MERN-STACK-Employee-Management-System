@@ -3,4 +3,3 @@
 https://aqueous-bastion-38134.herokuapp.com/
 
 ![web](https://user-images.githubusercontent.com/89632301/192088929-22fc2985-fa75-4750-8b9b-562cc5a71c04.png)
-<img src="https://user-images.githubusercontent.com/89632301/192088929-22fc2985-fa75-4750-8b9b-562cc5a71c04.png">
