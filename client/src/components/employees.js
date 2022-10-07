@@ -13,6 +13,7 @@ function Employees() {
       }).then(res => {
         return res.json();
       }).then(resData => {
+        console.log(resData);
         setEmpData(resData);
       });
     }
