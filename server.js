@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 
 app.use(cors());
+app.use(express.urlencoded({extended: false}));
 app.use(router);
 
 if(process.env.NODE_ENV === 'production'){
