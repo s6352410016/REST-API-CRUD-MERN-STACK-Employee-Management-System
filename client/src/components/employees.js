@@ -13,7 +13,7 @@ function Employees() {
       }).then(res => {
         return res.json();
       }).then(resData => {
-        console.log(resData);
+        console.log('5555');
         setEmpData(resData);
       });
     }
