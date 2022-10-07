@@ -9,10 +9,7 @@ function Employees() {
 
     window.onload = () => {
       fetch('https://aqueous-bastion-38134.herokuapp.com/employees' , {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
+        method: 'GET'
       }).then(res => {
         return res.json();
       }).then(resData => {
