@@ -7,16 +7,17 @@ function Employees() {
 
     const [empData , setEmpData] = useState([]);
 
-    window.onload = () => {
-      fetch('https://aqueous-bastion-38134.herokuapp.com/employees' , {
+    // window.onload = () => {
+      
+    // }
+
+    fetch('https://aqueous-bastion-38134.herokuapp.com/employees' , {
         method: 'GET'
       }).then(res => {
         return res.json();
       }).then(resData => {
-        console.log('5555');
         setEmpData(resData);
       });
-    }
 
     const deleteEmployee = (id) => {
       Swal.fire({
