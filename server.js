@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 app.use( (req , res , next) => {
-    // res.header('Content-Type' , 'application/form-data');
+    res.header('Content-Type' , 'application/json');
     res.header('Access-Control-Allow-Origin' , '*');
     // res.header('Access-Control-Allow-Methods' , 'GET , POST , PUT , DELETE');
     res.header('Access-Control-Allow-Headers' , 'Content-Type');
