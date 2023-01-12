@@ -2,11 +2,12 @@ const express = require('express');
 const model = require('../model/model');
 const multer = require('multer');
 const fs = require('fs');
+const path = require('path');
 const router = express.Router();
 
 const storage = multer.diskStorage({
     destination: (req , file , cb) => {
-        cb(null , './client/build/images');
+        cb(null , path.join(__dirname , './client/build/images'));
     },
     filename: (req , file , cb) => {
         const fileExtension = file.mimetype.split('/')[1];
