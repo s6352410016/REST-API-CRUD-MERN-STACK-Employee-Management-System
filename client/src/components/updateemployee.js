@@ -25,7 +25,7 @@ function UpdateEmployee() {
         formData.append('empSalary' , empSalary);
         formData.append('image' , empFilePhoto);
 
-        fetch(`https://aqueous-bastion-38134.herokuapp.com/updatemember/${params.id}` , {
+        fetch(`https://wild-cyan-bass-coat.cyclic.app/updatemember/${params.id}` , {
             method: 'PUT',
             body: formData
         }).then(res => {

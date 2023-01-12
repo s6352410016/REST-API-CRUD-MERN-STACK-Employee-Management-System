@@ -24,7 +24,7 @@ function AddEmployee() {
         formData.append('empSalary' , empSalary)
         formData.append('image' , empFilePhoto);
 
-        fetch('https://aqueous-bastion-38134.herokuapp.com/addmember' , {
+        fetch('https://wild-cyan-bass-coat.cyclic.app/addmember' , {
             method: 'POST',
             body: formData
         }).then(res => {

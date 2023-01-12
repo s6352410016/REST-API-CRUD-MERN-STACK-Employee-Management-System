@@ -8,7 +8,7 @@ function Employees() {
     const [empData , setEmpData] = useState([]);
 
     const fetchData = () => {
-      fetch('https://aqueous-bastion-38134.herokuapp.com/employees' , {
+      fetch('https://wild-cyan-bass-coat.cyclic.app/employees' , {
         method: 'GET'
       }).then(res => {
         return res.json();
@@ -34,7 +34,7 @@ function Employees() {
             'Your Data has been deleted.',
             'success'
           ).then(() => {
-            fetch(`https://aqueous-bastion-38134.herokuapp.com/deletemember/${id}` , {
+            fetch(`https://wild-cyan-bass-coat.cyclic.app/deletemember/${id}` , {
             method: 'DELETE'
           }).then(res => {
             if(res.status === 200){
