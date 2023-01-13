@@ -7,7 +7,7 @@ const router = express.Router();
 
 const storage = multer.diskStorage({
     destination: (req , file , cb) => {
-        cb(null , './client/public/images');
+        cb(null , './client/testUpload');
     },
     filename: (req , file , cb) => {
         const fileExtension = file.mimetype.split('/')[1];
@@ -52,7 +52,7 @@ router.put('/updatemember/:empid' , upload.single('image') , (req , res) => {
         if(err){
             console.log(err);
         }else{
-            fs.unlink(`./client/public/images/${docs.empPhoto}` , err => {
+            fs.unlink(`./client/testUpload/${docs.empPhoto}` , err => {
                 if(err){
                     console.log(err);
                 }else{
@@ -81,7 +81,7 @@ router.delete('/deletemember/:empid' , (req , res) => {
         if(err){
             console.log(err);
         }else{
-            fs.unlink(`./client/public/images/${docs.empPhoto}` , err => {
+            fs.unlink(`./client/testUpload/${docs.empPhoto}` , err => {
                 if(err){
                     console.log(err);
                 }else{
