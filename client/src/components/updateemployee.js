@@ -25,7 +25,7 @@ function UpdateEmployee() {
         formData.append('empSalary' , empSalary);
         formData.append('image' , empFilePhoto);
 
-        fetch(`https://wild-cyan-bass-coat.cyclic.app/updatemember/${params.id}` , {
+        fetch(`https://rest-api-crud-mern-stack-employee.onrender.com/updatemember/${params.id}` , {
             method: 'PUT',
             body: formData
         }).then(res => {

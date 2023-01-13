@@ -24,7 +24,7 @@ function AddEmployee() {
         formData.append('empSalary' , empSalary)
         formData.append('image' , empFilePhoto);
 
-        fetch('https://wild-cyan-bass-coat.cyclic.app/addmember' , {
+        fetch('https://rest-api-crud-mern-stack-employee.onrender.com/addmember' , {
             method: 'POST',
             body: formData
         }).then(res => {

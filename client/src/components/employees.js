@@ -8,7 +8,7 @@ function Employees() {
     const [empData , setEmpData] = useState([]);
 
     const fetchData = () => {
-      fetch('https://wild-cyan-bass-coat.cyclic.app/employees' , {
+      fetch('https://rest-api-crud-mern-stack-employee.onrender.com/employees' , {
         method: 'GET'
       }).then(res => {
         return res.json();
@@ -34,7 +34,7 @@ function Employees() {
             'Your Data has been deleted.',
             'success'
           ).then(() => {
-            fetch(`https://wild-cyan-bass-coat.cyclic.app/deletemember/${id}` , {
+            fetch(`https://rest-api-crud-mern-stack-employee.onrender.com/deletemember/${id}` , {
             method: 'DELETE'
           }).then(res => {
             if(res.status === 200){
