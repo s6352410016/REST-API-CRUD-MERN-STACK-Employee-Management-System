@@ -78,7 +78,7 @@ function Employees() {
                 <td>{data.empAddress}</td>
                 <td>{data.empTel}</td>
                 <td>{data.empSalary}</td>
-                <td><img src={`../testUpload/${data.empPhoto}`} width='100px' height='100px'></img></td>
+                <td><img src={`./images/${data.empPhoto}`} width='100px' height='100px'></img></td>
                 <td><Link to={`/update/${data._id}`} className='btn btn-primary'>Update</Link></td>
                 <td><Link className='btn btn-danger' onClick={() => deleteEmployee(data._id)}>Delete</Link></td>
               </tr>
