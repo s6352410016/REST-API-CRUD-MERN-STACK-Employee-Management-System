@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -7,7 +7,7 @@ function Employees() {
 
     const [empData , setEmpData] = useState([]);
 
-    const fetchData = () => {
+    useEffect(() => {
       fetch('https://rest-api-crud-mern-stack-employee.onrender.com/employees' , {
         method: 'GET'
       }).then(res => {
@@ -15,8 +15,7 @@ function Employees() {
       }).then(resData => {
         setEmpData(resData);
       });
-    }
-    fetchData();
+    }, []);
 
     const deleteEmployee = (id) => {
       Swal.fire({
